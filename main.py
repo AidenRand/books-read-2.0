@@ -5,7 +5,6 @@ root = Tk()
 root.geometry('300x280')
 
 # Create entry boxes
-
 title = Entry(root, width=40,)
 title.place(x=25, y=30)
 
@@ -31,6 +30,7 @@ def write_csv():
     dateFinished.delete(0, END)
     create_labels()
     
+# Create initial values in input box
 def temp_title(e):
     title.delete(0, END)
     
