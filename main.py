@@ -20,7 +20,10 @@ dateFinished.place(x=25, y=180)
 # Write user input to csv file
 def write_csv():
     with open('books.txt', 'a') as f:
-        f.write('\n| ' +title.get() + ' | ' + author.get() + ' | ' + str(pageCount.get()) + ' | ' + str(dateFinished.get())+ ' |')
+        f.write('\n| ' +title.get() +
+                ' | ' + author.get() +
+                ' | ' + str(pageCount.get()) +
+                ' | ' + str(dateFinished.get())+ ' |')
         f.write('\n-----------------------------------------------')
 
     # Clear input boxes on submit    
